@@ -1,8 +1,8 @@
 print("""Supported signs:+, -, /, *
-use 'end' OR to exit""")
+use 'exit' to exit""")
 try:
     str = ''
-    while str != 'end'.upper() and str != 'end'.capitalize():
+    while str != 'exit'.upper() and str != 'exit'.capitalize():
         str = input('calculate: ')
         if '+' in str:
             out_put = str.split('+')
@@ -16,7 +16,7 @@ try:
         elif '/' in str:
             out_put = str.split('/')
             print(f"Ans: {int(out_put[0]) / int(out_put[1])}")
-        elif 'end' in str:
+        elif 'exit' in str:
             break
         else:
             print(f"Ans: 0")
